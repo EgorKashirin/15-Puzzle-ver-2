@@ -1,0 +1,95 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@font-face
+  font-family: GothamPro
+  src: url('../fonts/GothamPro.eot')
+  src: local(GothamPro), url('fonts/GothamPro.ttf')
+
+@font-face
+  font-family: GothamProLight
+  src: url('../fonts/GothamProLight.ttf') format("opentype")
+  src: local(GothamProLight), url('fonts/GothamProLight.ttf')
+
+@font-face
+  font-family: LatoRegular
+  src: url('../fonts/LatoRegular.ttf') format("opentype")
+  src: local(LatoRegular), url('fonts/LatoRegular.ttf')
+
+body
+  background: #4b4b42 url(https://i.pinimg.com/originals/ff/c9/69/ffc969925625c3156af6bd6ffd9a6267.jpg) center no-repeat
+  background-size: cover
+.container
+  margin-top: 200px
+
+.header,.footer
+  color: white
+  text-align: center
+  text-shadow: 1px 1px 4px black
+.footer
+  h1
+    margin: 5px
+.button-reset
+  color: white
+  background-color: #FFD400
+  border-radius: 10px
+  width: 180px
+  height: 35px
+  text-align: center
+  text-shadow: 1px 1px 4px black
+  margin-top: 50px
+  margin-bottom: 50px
+  outline: none
+  cursor: pointer
+  &:hover
+    background: #FFEB3B
+    box-shadow: 0 0 15px #FFEB3B
+    z-index: 100
+    outline: none
+
+  &:active
+    font-size: 20px
+    box-shadow: 0 0 5px white
+    outline: none
+
+#game
+  position: relative
+  margin: auto
+  width: 320px
+  height: 320px
+  padding: 10px
+  background: #2196F3
+  border: 3px solid #03A9F4
+  border-radius: 10px
+  box-shadow: 0 0 20px black
+  div
+    position: absolute
+    font-family: Lobster
+    font-size: 50px
+    width: 70px
+    background: #FFD400
+    border-radius: 10px
+    text-align: center
+    line-height: 70px
+    cursor: pointer
+    box-shadow: 0 0 2px white
+    z-index: 10
+
+    -moz-user-select: none
+    -khtml-user-select: none
+    -webkit-user-select: none
+
+    transition: box-shadow ease-out 0.2s, font-size ease-out 0.2s, top ease-out 0.2s, left ease-out 0.2s
+    &:hover
+      background: #FFEB3B
+      box-shadow: 0 0 15px #FFEB3B
+      z-index: 100
+
+    &:active
+      font-size: 70px
+      box-shadow: 0 0 5px white
+#steps
+  margin-bottom: 120px
+
+@import "media" // Always at the end
